@@ -1,5 +1,10 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import UseRouter from "./components/UseRouter";
+import ServerComponent from "./components/ServerComponent";
+import LearnCss from "./components/LearnCss";
+import DataFetch from "./components/DataFetch";
+import LikePhp from "./components/LikePhp";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,6 +28,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <LikePhp/>
+        {/* <DataFetch/> */}
+        {/* <LearnCss/> */}
+        {/* <ServerComponent/> */}
+        {/* <UseRouter/> */}
         {children}
       </body>
     </html>
